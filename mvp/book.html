@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Komek.kz</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="text/css" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="books.css"> 
+</head>
+<body>
+.<nav class="navbar fixed-top navbar-expand-lg" id="home" style="background-color: black; height: 50px;">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <ul class="home">
+        <li><a href="#"  class="nav-link">Komek.kz</a></li>
+        <li id="two" style="margin-left: 14px;"><a class="nav-link" href="#">Для студентов</a></li>
+        <li id="two"><a class="nav-link" href="#">Для абитуриентов</a></li>
+        <li id="two"><a class="nav-link" href="#">Для школьников</a></li>
+        <li id="two"><a class="nav-link" href="#">Курсы</a></li>
+        <li id="two"><a class="nav-link" href="#">Тесты</a></li>
+        </ul>
+      </div>
+        <div class="search" id = "sear">
+        <input type = "text" placeholder ="Search..." class = "input" id ="keywords"><button class = "buttonx" onclick="buttonx()">✖</button>
+        </div>
+        <a class="btn1" href="#" id = "butn" onclick="Search()">Поиск</a>
+        <a class="btn" href="#"> <img src="hand.png" width="13%" height="7%">Войти</a>
+
+      
+    </div>
+
+</nav><br><br>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 6%;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://drasler.ru/wp-content/uploads/2022/01/%D0%A1%D0%BE-%D1%81%D0%BC%D1%8B%D1%81%D0%BB%D0%BE%D0%BC-%D0%BC%D0%BE%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5-%D1%86%D0%B8%D1%82%D0%B0%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%83%D1%87%D0%B5%D0%B1%D1%8B_05.jpg" width="600px" height = "300px" class="d-block" >
+    </div>
+    <div class="carousel-item">
+      <img src="https://millionstatusov.ru/pic/statpic/all3/59fdb89bb5029.jpg" width="600px" height = "300px" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="https://resheto.net/images/mater/motivaciya3.jpg" width="600px" height = "300px" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wikiphile.ru/wp-content/uploads/2020/01/frazy-motivacija-o-slabostjah.jpg" width="600px" height = "300px" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2021/11/%D0%9D%D0%B5-%D1%81%D0%B8%D0%B4%D0%B8%D1%82%D0%B5-%D0%B8-%D0%BD%D0%B5-%D0%B6%D0%B4%D0%B8%D1%82%D0%B5-%D1%87%D1%82%D0%BE-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE%D1%8F%D0%B2%D1%8F%D1%82%D1%81%D1%8F.-%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D0%B8%CC%86%D1%82%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D0%B8%CC%86%D1%82%D0%B5-%D0%B8%D1%85.-1.png" width="600px" height = "300px"class="d-block">
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<br>
+<div class="middle"><br>
+<p>
+  Сегодня в мире насчитывается более 400 тысяч самых разных профессий, из них только в промышленности и строительстве – более 3 тысяч. Причем, этот круг постоянно меняется. Ответ на вопрос о том, кем будет ребенок, также будет разным в зависимости от возраста детей, ситуации в стране и мире.
+  
+  На выбор будущей специальности влияют увлечения, уровень развития, советы педагогов, родителей, старших братьев и сестер, товарищей, престижность выбранного направления, спрос на рынке труда.
+  
+  Важно помнить, что, рассказывая детям о профессиях, нельзя озвучивать негативную сторону любого труда. Это может вызвать у ребенка отрицание. Информация, полученная по каждой специальности, расширит кругозор, и он самостоятельно оценит положительные и отрицательные моменты.<span id="dots"></span><span id="more"><br><br>Выбор профессии – это личное решение любого человека. Зачастую он зависит от предметов, изучаемых в школе, углубленного преподавания отдельных наук. Обязанность взрослых – создавать наполненную душевным теплом и уютом атмосферу, в которой комфортно развиваться и искать свое предназначение.
+    <br><br></span></p>
+<a onclick="myFunction()" id="myBtn" style="text-decoration: underline; cursor: pointer; margin-left:88%;">Read more↓</a><br><br>
+ 
+<h1 style="font-weight: bold; text-align: center; font-weight: 1000; font-size: 55px;">Наши проекты</h1>
+
+<div id="carouselExampleIndicatorss" class="carousel slide" data-bs-ride="carousel" style="margin-top: 0%;">  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicatorss" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorss" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner" style="margin: 3%;">
+    <div class="carousel-item active">
+      <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-12" id="muha"><br>
+
+      <a href="">
+      <img src="https://www.ncertbooks.guru/wp-content/uploads/2022/03/Professional-Courses-in-India.jpeg" width="260" height="370" class="imggg"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">Как прорваться в IT?</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Top_10_professional_courses_after_12th.jpg/1200px-Top_10_professional_courses_after_12th.jpg" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">ТОП профессии для школьников</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://zyorna.ru/uploads/catalog/kem-byt-sekrety-vybora-professii-kniga-s-kotoroj-nachinaetsya-karera-97404/kem-byt-sekrety-vybora-professii-kniga-s-kotoroj-nachinaetsya-karera-97404-483152.JPG" width="260" height="370"></a><br><br>
+      <a href="" style="color:rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">Кем быть? <br>Автор: Дмитрий Парнов</a>
+     
+    </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">
+Основы C++</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://dev.java/assets/images/java-logo-vert-blk.png" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">Основы JAVA</a>
+      
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/800px-Python.svg.png" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 15px; text-decoration: underline;">Основы Python
+</a>
+    </div>
+      </div>
+    </div>
+  </div>
+     <h1 class="kino" style="font-weight: bold; text-align: center; font-weight: 1000; font-size: 55px;"><u>Рекомендуемые книги</u></h1>
+
+<div class="container features" style="margin-top: -1.5%;">
+  <div class="row" style="margin: 2%;">
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://sun9-39.userapi.com/impg/upzbunKRjkeqj8oT-ilx8aUKHa7TGyXAbpAdWw/QxgkPKv6afM.jpg?size=399x604&quality=96&sign=46415441a18ae40416932d83ba8873b1&type=album" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 25px;text-decoration: underline;">Успешный выбор профессии</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="data:image/jpeg;base64,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" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 25px; text-decoration: underline;">Выбор профессии</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://n1s1.hsmedia.ru/79/11/33/791133683fd7b4b287bfcfac0dd37111/1000x1444_0xac120003_4754299111591365139.jpg" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 25px; text-decoration: underline;">Мечтать не вредно</a>
+    </div>
+         <h1  style="font-weight: bold; text-align: center; font-weight: 1000; font-size: 55px;">Наши рекомендации</h1>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://m.buro247.ru/images/logos/670-830-yandex.jpg" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 20px; text-decoration: underline;">Яндекс практикум</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href="">
+      <img src="https://play-lh.googleusercontent.com/oDuTGEHru1KMr3QOfQfPKgIdNnlq3WWQxpBYND23r2a7RVnS1HW0t7dyON86Vn_QhtM" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 20px; text-decoration: underline;">Курсы на Udemy</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"><br>
+      <a href=""> 
+      <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1" width="260" height="370"></a><br><br>
+      <a href="" style="color: rgb(7, 163, 247); font-weight: 1000; font-size: 20px; text-decoration: underline;">Курсы на coursera</a>
+    </div>
+  </div>
+</div><br><br>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorss"  data-bs-slide="prev" style="margin-left: -3%;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorss"  data-bs-slide="next" style="margin-right: -3%;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<footer>
+  <div class="container">
+    <p>Сделано для MVP проекта</p>
+    <ul>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Полтикика конфиденциальности</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script type="text/javascript" src="readmore.js"></script>
+
+
+</body>
+</html>
